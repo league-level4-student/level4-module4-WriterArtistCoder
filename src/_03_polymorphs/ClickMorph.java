@@ -19,7 +19,7 @@ public class ClickMorph extends Polymorph implements MouseListener {
 		g.fillRect(getX(), getY(), getWidth(), getHeight());
 	}
 	
-	@Override
+		@Override
 	public void update() {
 		
 	}
@@ -31,9 +31,14 @@ public class ClickMorph extends Polymorph implements MouseListener {
 
 	@Override
 	public void mousePressed(MouseEvent e) {
-		JOptionPane.showMessageDialog(null, "Color key:\nRedPolymorph - RED\nBluePolymorph - BLUE\n"
+		int x = e.getX();
+		int y = e.getY();
+		if (x >= getX() && x <= getX()+getWidth()
+		&& y >= getY() && y <= getY()+getHeight()) {
+			JOptionPane.showMessageDialog(null, "Color key:\nRedPolymorph - RED\nBluePolymorph - BLUE\n"
 				+ "MovingMorph - GREEN\nCircleMorph - YELLOW\nMouseMorph - CYAN\nImageMorph - xkcd.com/953\n"
 				+ "ClickMorph - BLACK");
+		}
 	}
 
 	@Override

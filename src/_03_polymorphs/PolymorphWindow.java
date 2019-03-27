@@ -41,7 +41,7 @@ public class PolymorphWindow extends JPanel implements ActionListener{
    	 morph.add(new MouseMorph(400, 0, 50, 50)); // CYAN
    	 morph.add(new ImageMorph(200, 100, 100, 100)); // XKCD.COM/953
    	 morph.add(new ClickMorph(300, 200, 50, 50)); // BLACK
-   	 
+   	 this.addMouseListener((ClickMorph) morph.get(6));
    	 timer = new Timer(1000 / 30, this);
    	 timer.start();
     }
