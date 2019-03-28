@@ -29,4 +29,19 @@ public class Hospital {
 		return doctors;
 	}
 
+	public void assignPatientsToDoctors() {
+		int x = -1;
+		for (int i = 0; i < patients.size(); i++) {
+			if (i%3 == 0) {
+				x++;
+			}
+			
+			try {
+				doctors.get(x).assignPatient( patients.get(i) );
+			} catch (DoctorFullException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
 }

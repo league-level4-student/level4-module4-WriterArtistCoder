@@ -5,15 +5,15 @@ public class Patient {
 	private boolean feelsCaredFor;
 	
 	public Patient() {
-		setFeelsCaredFor(false);
+		feelsCaredFor = false;
 	}
 
 	public boolean feelsCaredFor() {
 		return feelsCaredFor;
 	}
 
-	public void setFeelsCaredFor(boolean feelsCaredFor) {
-		this.feelsCaredFor = feelsCaredFor;
+	public void checkPulse() {
+		this.feelsCaredFor = true;
 	}
 
 }
