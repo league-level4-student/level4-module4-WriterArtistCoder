@@ -2,7 +2,24 @@ package _04_hospital;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Test;
+/**
+ * List:
+ * [Person's name]
+ * Nuclear
+ * Barbie
+ * Barney
+ * Harry Potter
+ * Homer Simpson
+ * Simpson
+ * Beatle
+ * Beetle
+ * 
+ * Format:
+ * <Item from List>(s?) and the <Item from List>(s?)
+ * 
+ * Possibilities:
+ * <Number of Items in List>^2 * 4
+ */
 
 import java.util.List;
 
@@ -115,7 +132,4 @@ public class HospitalTest extends TestCase {
 		assertEquals(3, testDoctors.get(1).getPatients().size());
 		assertEquals(2, testDoctors.get(2).getPatients().size());
 	}
-
-
-
 }

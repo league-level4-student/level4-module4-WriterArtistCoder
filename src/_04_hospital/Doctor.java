@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Doctor {
 	
-	private static boolean performsSurgery;
-	private static boolean makesHouseCalls;
-	private static ArrayList<Patient> patients;
+	private boolean performsSurgery;
+	private boolean makesHouseCalls;
+	private ArrayList<Patient> patients;
 	
 	public Doctor() {
 		performsSurgery = false;
